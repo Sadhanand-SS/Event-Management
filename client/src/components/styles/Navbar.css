@@ -1,0 +1,124 @@
+/* Navbar Styles */
+.navbar {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1a1a2e; /* Dark background, same as footer */
+  color: #e6e6e6; /* Light text color */
+  height: 60px;
+  position: relative;
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #f8b400; /* Gold color for the logo */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar-links a {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #f8b400; /* Hover effect to match footer */
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 21px;
+  justify-content: space-between;
+}
+
+.navbar-toggle .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Style for the Username button */
+.username-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.username-btn:hover {
+  background-color: #444;
+  color: #f8b400;  /* Match hover effect with footer */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1a1a2e; /* Dark background, same as footer */
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links ul {
+    display: block;
+  }
+
+  .navbar-links li {
+    margin: 15px 0;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}

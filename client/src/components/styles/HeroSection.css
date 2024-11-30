@@ -1,0 +1,20 @@
+/* HeroSection.css */
+
+.hero-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #FEFBEA;
+    color: navy;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  }
+  

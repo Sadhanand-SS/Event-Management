@@ -1,0 +1,63 @@
+/* AdminCard.css */
+
+.admin-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.admin-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.admin-card p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.admin-card strong {
+    color: #000;
+}
+
+.admin-card button {
+    background: #f8b400; /* Bright orange color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-card button:hover {
+    background: #d99a00; /* Darker orange for hover */
+    transform: translateY(-2px);
+}
+
+.admin-card button:active {
+    background: #b37800; /* Even darker orange for active state */
+    transform: translateY(0);
+}
+
+.admin-card button:disabled {
+    background: #ffe0a3; /* Lightened orange for disabled state */
+    color: #666666;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .admin-card {
+        padding: 1rem;
+    }
+}

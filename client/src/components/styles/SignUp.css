@@ -1,0 +1,91 @@
+/* SignUp Form Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a2e; /* Same background as footer */
+}
+
+/* SignUp Form */
+.signup-form {
+  background: #ffffff;
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Arial', sans-serif; /* Matching font family from footer */
+  color: #343a40; /* Same as the header text in footer */
+}
+
+/* Form Title */
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f8b400; /* Same color as footer section titles */
+  font-size: 24px;
+}
+
+/* Form Group */
+.signup-form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #e6e6e6; /* Matching footer text color */
+  font-size: 14px;
+}
+
+.signup-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.signup-form-group input:focus {
+  border-color: #f8b400; /* Same as the footer highlight color */
+  outline: none;
+  box-shadow: 0 0 5px rgba(248, 180, 0, 0.25); /* Focus color matching footer theme */
+}
+
+/* SignUp Button */
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f8b400; /* Footer accent color */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #e68a00; /* Slightly darker for hover effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .signup-form {
+      padding: 20px;
+  }
+
+  .signup-form h2 {
+      font-size: 20px;
+  }
+
+  .signup-form-group input {
+      font-size: 12px;
+  }
+
+  .signup-button {
+      font-size: 14px;
+  }
+}
